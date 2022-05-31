@@ -45,7 +45,7 @@ jobs:
             echo $(pwd)
             echo $(ls -al)
             npm run build            
-            cp -Rf .elasticbeanstalk/config.yml www/.elasticbeanstalk/
+            cp -R .elasticbeanstalk www/.elasticbeanstalk 
   # deploy step will run only after manual approval
   deploy:
     docker:
