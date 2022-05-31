@@ -42,9 +42,9 @@ jobs:
           name: API Build
           command: |
             cd udagram/udagram-api
-            npm run build
             echo $(pwd)
-            echo $(ls -l)
+            echo $(ls -al)
+            npm run build            
             cp -Rf .elasticbeanstalk/config.yml www/.elasticbeanstalk/
   # deploy step will run only after manual approval
   deploy:
