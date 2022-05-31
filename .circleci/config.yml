@@ -34,9 +34,9 @@ jobs:
           name: Front-End Build
           command: |
             echo "NODE --version" 
-            echo node --version
+            echo $(node --version)
             echo "NPM --version" 
-            echo npm --version
+            echo $(npm --version)
             npm run frontend:build
       - run:
           name: API Build
