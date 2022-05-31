@@ -9,7 +9,7 @@ jobs:
   build:
     docker:
       # the base image can run most needed actions with orbs
-      - image: "cimg/base:stable"
+      - image: "cimg/node:14.15"
     steps:
       # install node and checkout code
       - node/install:
@@ -33,6 +33,10 @@ jobs:
       - run:
           name: Front-End Build
           command: |
+            echo "NODE --version" 
+            echo node --version
+            echo "NPM --version" 
+            echo npm --version
             npm run frontend:build
       - run:
           name: API Build
