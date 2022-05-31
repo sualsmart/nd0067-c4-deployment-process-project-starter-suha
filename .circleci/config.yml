@@ -43,7 +43,9 @@ jobs:
           command: |
             cd udagram/udagram-api
             npm run build
-            cp -Rf '.elasticbeanstalk' www/.elasticbeanstalk 
+            echo ${pwd}
+            echo ${ls -l}
+            cp -Rf .elasticbeanstalk/config.yml www/.elasticbeanstalk/
   # deploy step will run only after manual approval
   deploy:
     docker:
