@@ -2,7 +2,9 @@
   "name": "udagram-api",
   "version": "2.0.0",
   "description": "",
-  "engines": { "node" : "14.15.0" },
+  "engines": {
+    "node": "14.15.0"
+  },
   "main": "src/server.js",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
@@ -48,6 +50,6 @@
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.1.4",
     "ts-node-dev": "^1.0.0-pre.32",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.9.10"
   }
 }
