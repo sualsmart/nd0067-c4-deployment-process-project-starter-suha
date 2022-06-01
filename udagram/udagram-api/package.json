@@ -7,7 +7,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "npm install -f . --production=false && npm run dev",
+    "start": "npm run dev",
     "tsc": "tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
