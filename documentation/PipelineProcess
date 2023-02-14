@@ -1,0 +1,22 @@
+Pipeline process
+Two main jobs:
+1- build which consist of the following: which runs series of steps of commands:
+Spin up environment
+Preparing environment variables
+Install Node.js 14.15
+Checkout code
+Install Front-End Dependencies
+Install API Dependencies
+Front-End Lint
+Front-End Build
+API Build
+3- hold required to approve manually to execute the deploy job
+2- deploy which consist of the following steps: which consist of the following: which runs series of steps of commands:
+Spin up environment
+Preparing environment variables
+Install Node.js 14.15
+Setting Up Elastic Beanstalk CLI
+Install AWS CLI - latest
+Configure AWS Access Key ID
+Checkout code
+Deploy App
