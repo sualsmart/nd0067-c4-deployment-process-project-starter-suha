@@ -62,8 +62,8 @@ jobs:
           # deploy script does an install, build, deploy in both apps
           command: |
             npm run api:build
-            eb list && eb use udagram-api-dev
-            eb deploy
+            npm run api:deploy
+            npm run frontend:deploy
 workflows:
   udagram:
     jobs:
