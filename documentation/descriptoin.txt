@@ -1,0 +1,17 @@
+infrastructure description 
+
+This project is full stack javascript project which uses many technologies, packages  and framework such as AWS and circle, node and express, PostgresDB and angular.
+1- Express is server Sid framework 
+2- NodeJs which is server side technology which help to setup web server 
+3- Angular js which is frontend framework 
+4- PostgresDB which sql based db.
+
+The project divides into two important folder ( folder responsible about the frontend setup which is udagaram frontend and folder udgaram-api  responsible about the back end setup)
+
+We have used AWS cloud service to deploy the application by using and setting up the needed resources, services  and tools such as AWS RDS for postgres db and EB elastic beanstalk for api back end deployment and s3 for creating bucket for storing frontend artifacts.
+
+Brief description of the main AWS services used:
+RDS its a services provided by amazon responsible for setting up and operating and scaling a database 
+Amazon EB: is a service responsible for deployment of web applications and the scalling required for those application.
+Amazon S3 service: Simple Storage Service for storing needed frontend data, it provide and assure the availability of data and security.
+AWS IAM : which is Identity and Access Management service which simplify the ease of creation of user and groups with various ACL rules.
